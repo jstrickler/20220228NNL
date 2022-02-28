@@ -40,6 +40,3 @@ print(formatted_values)
 
 
 
-
-
-
