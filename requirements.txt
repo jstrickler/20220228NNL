@@ -1,0 +1,16 @@
+numpy
+scipy
+ipython
+jupyter
+lxml
+openpyxl
+pylint
+pandas
+matplotlib
+sympy
+netcdf4
+seaborn
+h5py
+dateutil
+paramiko
+requests

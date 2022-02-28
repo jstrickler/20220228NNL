@@ -1,0 +1,1 @@
+print("Wombats are Australian")
