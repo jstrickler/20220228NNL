@@ -1,3 +1,7 @@
+import sys
+
+print(sys.argv)
+
 print("Hello, Python world")
 # print("I like the Beatles")
 # print("Abbey Road is a great album")

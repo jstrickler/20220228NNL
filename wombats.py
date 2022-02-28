@@ -1,1 +1,0 @@
-print("Wombats are Australian")
