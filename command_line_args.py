@@ -9,7 +9,19 @@ x = float(sys.argv[1])
 
 print(x * 10)
 
-print(len(sys.argv))
+name = "Bob"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -8,3 +8,7 @@ raw_num = input("Enter number: ")  # <1>
 num = int(raw_num)  # <2>
 
 print("2 times", num, "is ", 2 * num)
+
+value_str = input("Enter one or more values, separated by space: ")
+values = value_str.split()
+print("values: ", values)
