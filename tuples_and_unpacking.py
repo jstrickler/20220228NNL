@@ -23,5 +23,22 @@ people = [
 print(type(people), type(people[0]), type(people[0][0]))
 print(people[0], people[0][0], people[0][0][0])
 
+for first_name, last_name, *_ in people:
+    # first_name, last_name, product, dob = people[0]
+    # first_name, last_name, product, dob = people[1]
+    # first_name, last_name, product, dob = people[2]
+    # etc
+    print(first_name, last_name)
+print('-' * 60)
+
+values = [('a', 10), ('m', 19), ('z', 22), ('r', 24)]
+for letter, number in values:
+    print(letter, number)
+print()
+
+
+
+
+
 
 
