@@ -27,7 +27,7 @@ def add_age_at_inauguration(ws):
     for row in range(2, 47):
         birth_date = make_date(ws.cell(row=row, column=4).value)  # treat date as string
         inaugural_date = make_date(ws.cell(row=row, column=8).value)
-        raw_age_took_office = inaugural_date - birth_date
+        raw_age_took_office = inaugural_date - birth_date  # timedelta
         age_took_office = raw_age_took_office.days / 365.25
         ws.cell(row=row, column=new_col).value = age_took_office
 

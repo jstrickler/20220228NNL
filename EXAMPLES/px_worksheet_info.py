@@ -4,7 +4,7 @@ import openpyxl as px
 def main():
     """program entry point"""
     wb = px.load_workbook('../DATA/presidents.xlsx')
-    ws = wb['US Presidents']
+    ws = wb['US Presidents']  #  wb.active
 
     print(ws.dimensions)
     print(ws.min_column)

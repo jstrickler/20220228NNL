@@ -14,11 +14,13 @@ books = [
 
 
 def strip_articles(title):  # <.>
+    original_title = title
     title = title.lower()
     for article in 'a ', 'an ', 'the ':
         if title.startswith(article):
             title = title[len(article):]  # <.>
             break
+    print(f"defining key for '{original_title}' as '{title}'")
     return title
 
 

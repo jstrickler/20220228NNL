@@ -4,8 +4,10 @@ import openpyxl as px
 def main():
     wb = px.load_workbook('../DATA/presidents.xlsx')
     ws = wb.active  # <.>
-    headers = next(ws.values)   # <.>
-    for row in ws.values:  # <.>
+    all_values = ws.values
+    headers = next(all_values)   # <.>
+    print("Headers:", headers)
+    for row in all_values:  # <.>
         print(row[:5])   # <.>
 
 

@@ -3,6 +3,8 @@ import requests
 
 response = requests.get("https://www.python.org")  # <1>
 
+print("status code", response.status_code)
+
 for header, value in sorted(response.headers.items()): # <2>
     print("{:20.20s} {}".format(header, value))
 print()

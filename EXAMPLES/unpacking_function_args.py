@@ -11,4 +11,5 @@ def person_record(first_name, last_name, city, state): # <2>
     print("{} {} lives in {}, {}".format(first_name, last_name, city, state))
 
 for person in people:  # <3>
+    # person_record(person[0], person[1], person[2], person[3])
     person_record(*person)  # <4>
