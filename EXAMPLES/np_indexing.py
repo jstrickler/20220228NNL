@@ -12,6 +12,9 @@ a = np.array(
 print(a)
 print()
 
+#  array[row-thing, col-thing]
+print(a[:2, :3])
+
 print('a[0] =>', a[0])  # <2>
 print('a[0][0] =>', a[0][0])  # <3>
 print('a[0,0] =>', a[0, 0])  # <4>
@@ -21,3 +24,7 @@ print()
 print('a[::2] =>', a[::2])  # <7>
 print()
 print('a[:3, -2:] =>', a[:3, -2:])  # <8>
+
+print('a[:,-2:] =>', a[:,-2:])
+
+print('a[2:4] => ', a[2:4])

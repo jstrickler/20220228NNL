@@ -15,3 +15,15 @@ with open('../TEMP/stuff.csv', 'w') as stuff_in:
         wtr = csv.writer(stuff_in) # <1>
     for row in data:
         wtr.writerow(row) # <2>
+
+with open('../DATA/columns_of_numbers.txt') as col_in:
+    with open('columns.csv', 'w') as col_out:
+        wtr = csv.writer(col_out, lineterminator='\n')
+        for row in col_in:
+            fields = row.rstrip().split()
+            wtr.writerow(fields)
+
+with open('columns.csv') as col_in:
+    rdr = csv.DictReader(col_in)
+    for row in rdr:
+        print(row['Alpha'], row['Gamma'])

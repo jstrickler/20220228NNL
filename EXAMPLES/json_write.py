@@ -20,7 +20,7 @@ george = [
         'spam': 'ham',
         'eggs': [1.2, 2.3, 3.4],
         'toast': {'a': 5, 'm': 9, 'c': 4},
-    }
+    },
 ]  # <1>
 
 js = json.dumps(george, indent=4)  # <2>

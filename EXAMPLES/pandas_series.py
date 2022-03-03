@@ -12,6 +12,8 @@ s2 = pd.Series(np.linspace(1, 5, NUM_VALUES))  # <3>
 print("s1:", s1, "\n")
 print("s2:", s2, "\n")
 
+print("s1['e']: {}\n".format(s1['e']))
+
 print("selecting elements")
 print(s1[['h', 'b']], "\n")  # <4>
 
