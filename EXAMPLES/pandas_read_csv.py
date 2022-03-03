@@ -1,31 +1,12 @@
-#!/usr/bin/env python
 import pandas as pd
-from printheader import print_header
 
-# data from
-# http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/
-# national_transportation_statistics/html/table_01_44.html
+df = pd.read_csv('../DATA/sales_records.csv')  # <.>
 
-airports_df = pd.read_csv('../DATA/airport_boardings.csv', thousands=',', index_col=1)  # <1>
+print(df.describe())  # <.>
+print()
 
-print_header("HEAD OF DATAFRAME")
+print(df.info())  # <.>
+print()
 
-print(airports_df.head(), "\n")
+print(df.head())  # <.>
 
-print_header("SELECTED COLUMNS WITH FILTERED ROWS")
-columns_wanted = ['2001 Total', 'Airport']
-sort_col = '2001 Total'
-max_val = 20000000
-selector = airports_df['2001 Total'] > max_val
-selected = airports_df[selector][columns_wanted]
-print(selected)
-
-print_header("COLUMN TOTALS")
-print(airports_df[['2001 Total', '2010 Total']].sum(), "\n")
-
-# print_header("'CODE' COLUMN SET AS INDEX")
-# airports_df.set_index('Code')
-# print(airports_df)
-
-print_header("FIRST FIVE ROWS")
-print(airports_df.iloc[:5])
