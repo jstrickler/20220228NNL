@@ -8,3 +8,5 @@ print(files, '\n')
 no_files = glob('../JUNK/*.avi')
 print(no_files, '\n')
 
+# recursive globbing
+print(glob('../**/*funk*', recursive=True))

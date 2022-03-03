@@ -5,7 +5,7 @@ import openpyxl as px
 def main():
     """program entry point"""
     wb = px.load_workbook('../DATA/presidents.xlsx')
-    ws = wb['US Presidents']
+    ws = wb['US Presidents']  #  wb.active
 
     print("Title:", ws.title)
     print("Dimensions:", ws.dimensions)

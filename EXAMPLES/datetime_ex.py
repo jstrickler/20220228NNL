@@ -1,8 +1,11 @@
 #!/usr/bin/env python
 
+# from module import class, class, class
 from datetime import datetime, date, timedelta
 
-print("date.today():", date.today())  # <1>
+today = date.today()
+print("date.today():", today)  # <1>
+print(type(today), today.month, today.day, today.year)
 
 now = datetime.now()  # <2>
 print("now.day:", now.day)  # <3>
@@ -11,6 +14,7 @@ print("now.year:", now.year)
 print("now.hour:", now.hour)
 print("now.minute:", now.minute)
 print("now.second:", now.second)
+print("now.microsecond:", now.microsecond)
 
 d1 = datetime(2018, 6, 13)  # <4>
 d2 = datetime(2018, 8, 24)

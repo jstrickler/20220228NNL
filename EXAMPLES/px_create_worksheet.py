@@ -24,4 +24,8 @@ for fruit in fruits:
 #     ws.cell(row=i, column=1).value = fruit
 #     ws.cell(row=i, column=2).value = len(fruit)
 
+ws = wb.create_sheet()
+ws.title = "nuts"
+ws.cell(row=1, column=1).value = "pecans"
+
 wb.save('fruits.xlsx')
