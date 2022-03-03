@@ -13,15 +13,14 @@ def main():
 
     # 2
     for ws in wb:
-        print(ws)
+        print(ws.title, ws.dimensions)
     print()
 
     # 3
     ws = wb.active
     print(ws, '\n')
 
-    print(ws['A1'].value)
-    print(ws['C2'].value, ws['B2'].value)
+    print(ws['B2'].value)
 
 
 if __name__ == '__main__':
